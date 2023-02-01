@@ -74,6 +74,11 @@ h1 {
   font-size: 2.25rem;
 }
 
+h2 {
+  font-size: 1.625rem;
+  font-weight: 700;
+}
+
 .header {
   margin-bottom: 32px;
 }
@@ -158,6 +163,32 @@ h1 {
   bottom: 24px;
 }
 
+.hero2 {
+  margin-bottom: 100px;
+}
+.hero2 img {
+  width: 100%;
+}
+.hero2 h2 {
+  margin-bottom: 24px;
+}
+.hero2 p {
+  color: hsl(30deg, 5%, 45%);
+  font-weight: 500;
+  margin-bottom: 24px;
+  line-height: 26px;
+}
+.hero2 a {
+  display: block;
+  margin: auto;
+}
+.hero2 .margin > div:nth-child(1) {
+  margin-bottom: 40px;
+}
+.hero2 .margin > div:nth-child(2) {
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .regular {
     font-size: 18px;
@@ -170,6 +201,9 @@ h1 {
   }
   h1 {
     font-size: 2.75rem;
+  }
+  h2 {
+    font-size: 32px;
   }
   .header {
     margin-bottom: 68px;
@@ -203,10 +237,37 @@ h1 {
   .hero .hero-grid-item:nth-child(4), .hero .hero-grid-item:nth-child(6) {
     grid-column: 3/5;
   }
+  .hero2 {
+    margin-bottom: 120px;
+  }
+  .hero2 p {
+    line-height: 28px;
+  }
+  .hero2 a {
+    margin: unset;
+  }
+  .hero2 .margin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero2 .margin > div:nth-child(1) {
+    width: 52.2%;
+    margin-left: -83px;
+    margin-bottom: 0;
+  }
+  .hero2 .margin > div:nth-child(2) {
+    text-align: left;
+    width: 49.1%;
+    margin-left: 69px;
+  }
 }
 @media (min-width: 1440px) {
   .margin {
     width: 77%;
+  }
+  h2 {
+    font-size: 40px;
   }
   .header {
     margin-bottom: 66px;
@@ -235,5 +296,28 @@ h1 {
   }
   .hero .hero-grid-item:nth-child(5), .hero .hero-grid-item:nth-child(6) {
     grid-column: 5/7;
+  }
+  .hero2 {
+    margin-bottom: 88px;
+  }
+  .hero2 p {
+    line-height: 28px;
+  }
+  .hero2 a {
+    margin: unset;
+  }
+  .hero2 .margin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero2 .margin > div:nth-child(1) {
+    width: 40%;
+    margin-left: unset;
+  }
+  .hero2 .margin > div:nth-child(2) {
+    text-align: left;
+    width: 48.3%;
+    margin-left: unset;
   }
 }
