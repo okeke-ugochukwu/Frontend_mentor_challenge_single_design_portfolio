@@ -1,0 +1,51 @@
+@include tabs {
+   .regular {
+      font-size: 18px; //18px
+   }
+   .btn {
+      max-width: 228px;
+   }
+   .margin {
+      width: 89%;
+   }
+
+   //HEADER
+   .header {
+
+      .margin {
+         padding-top: 34px;
+      }
+
+      a {
+         //logo
+         &:nth-child(1) {
+            img {
+               width: 64px;
+            }
+         }
+      }
+   }
+
+}
+
+@include desktop {
+   .margin {
+      width: 77%;
+   }
+
+   //HEADER
+   .header {
+      .margin {
+         padding-top: 34px;
+      }
+
+      a {
+         //logo
+         &:nth-child(1) {
+            img {
+               width: 64px;
+            }
+         }
+      }
+   }
+}

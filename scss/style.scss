@@ -1,0 +1,77 @@
+@import './mini/reset';
+@import './mini/colors';
+@import './mini/fonts';
+@import './mini/mixins';
+@import './mini/screens';
+
+
+//BASE STYLES
+* {
+   font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.regular {
+   font-size: 1rem; //16px
+}
+.mid {
+   font-size: 1.5rem; //24px
+}
+.btn {
+   font-size: 1rem; //16px
+   border: none;
+   border-radius: 28px;
+   width: 60%;
+   min-width: 172px;
+   max-width: 172px;
+   font-weight: 700;    
+   padding: 14px 0px;
+   color: $white;
+   text-align: center;
+}
+.primary-btn {
+   background: $black;
+
+   &:hover {
+      background: $galaticBlue;
+   }
+}
+.secondary-btn {
+   background: $lightRed;
+
+   &:hover {
+      background: $summerYellow;
+   }
+}
+.margin {
+   width: 91.46%;
+   margin: auto;
+}
+
+
+//HEADER
+.header {
+
+   .margin {
+      @include flexSpread;
+      align-items: center;
+      padding-top: 16px;
+   }
+
+   a {
+      display: block;
+
+      //logo
+      &:nth-child(1) {
+         img {
+            width: 48px;
+         }
+      }
+
+      //action-btn
+      &:nth-child(1) {
+
+      }
+   }
+}
+
+
+@import './mini/resQueries';

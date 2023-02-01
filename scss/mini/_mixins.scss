@@ -1,0 +1,61 @@
+
+@mixin hoverPointer {
+   &:hover {
+       cursor: pointer;
+       text-decoration: none;
+   }
+}
+
+@mixin resetDefault {
+   background: none;
+   border: none;
+}
+@mixin removeSpinners {
+   &[type=number] {
+       &::-webkit-inner-spin-button,
+       &::-webkit-outer-spin-button {
+           -webkit-appearance: none;
+           margin: 0;
+       }
+       -moz-appearance: textfield;
+   }
+}
+
+@mixin gridCenter {
+   display: grid;
+   place-items: center;
+}
+
+@mixin flexCenter {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+@mixin flexAlignCenter {
+   display: flex;
+   align-items: center;
+}
+@mixin flexLeft {
+   display: flex;
+   align-items: left;
+   justify-content: center;
+}
+
+
+
+@mixin flexSpread {
+   display: flex;
+   justify-content: space-between;
+}
+
+@mixin flexColumn {
+   display: flex;
+   flex-direction: column;
+}
+
+@mixin showAll {
+   * {
+       outline: 1px solid black;
+   }
+}

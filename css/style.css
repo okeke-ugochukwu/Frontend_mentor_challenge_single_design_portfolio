@@ -1,0 +1,108 @@
+* {
+  transition: 0.3s;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.regular {
+  font-size: 1rem;
+}
+
+.mid {
+  font-size: 1.5rem;
+}
+
+.btn {
+  font-size: 1rem;
+  border: none;
+  border-radius: 28px;
+  width: 60%;
+  min-width: 172px;
+  max-width: 172px;
+  font-weight: 700;
+  padding: 14px 0px;
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+}
+
+.primary-btn {
+  background: hsl(0deg, 0%, 1%);
+}
+.primary-btn:hover {
+  background: hsl(252deg, 66%, 62%);
+}
+
+.secondary-btn {
+  background: hsl(7deg, 77%, 66%);
+}
+.secondary-btn:hover {
+  background: hsl(28deg, 89%, 67%);
+}
+
+.margin {
+  width: 91.46%;
+  margin: auto;
+}
+
+.header .margin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+}
+.header a {
+  display: block;
+}
+.header a:nth-child(1) img {
+  width: 48px;
+}
+@media (min-width: 768px) {
+  .regular {
+    font-size: 18px;
+  }
+  .btn {
+    max-width: 228px;
+  }
+  .margin {
+    width: 89%;
+  }
+  .header .margin {
+    padding-top: 34px;
+  }
+  .header a:nth-child(1) img {
+    width: 64px;
+  }
+}
+@media (min-width: 1440px) {
+  .margin {
+    width: 77%;
+  }
+  .header .margin {
+    padding-top: 34px;
+  }
+  .header a:nth-child(1) img {
+    width: 64px;
+  }
+}
