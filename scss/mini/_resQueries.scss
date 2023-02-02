@@ -4,6 +4,9 @@
    }
    .btn {
       max-width: 228px;
+      min-width: 228px;
+      font-size: 1rem; //16px
+      padding: 14px 0px;
    }
    .margin {
       width: 89%;
@@ -17,23 +20,24 @@
    h3 {
       font-size: 2rem; //32px
    }
+   .top-bottom-bar {
+      a {
+         //logo
+         &:nth-child(1) {
+            height: 64px;
+
+            img {
+               width: 64px;
+               height: 64px;
+            }
+         }
+      }
+   }
 
    //HEADER
    .header {
       margin-bottom: 68px;
-
-      .margin {
-         padding-top: 34px;
-      }
-
-      a {
-         //logo
-         &:nth-child(1) {
-            img {
-               width: 64px;
-            }
-         }
-      }
+      margin-top: 34px;
    }
 
    //HERO
@@ -50,7 +54,7 @@
 
       .hero-grid {
          grid-template-columns: repeat(4, 1fr);
-         grid-template-rows: 182px;
+         grid-template-rows: 182px 158px;
       }
 
       .hero-grid-item {
@@ -79,6 +83,7 @@
       }
       a {
          margin: unset;
+         min-width: 228px;
       }
 
       .margin {
@@ -115,7 +120,7 @@
       }
 
       .workSlide-slider {
-         margin-bottom: 32px;
+         margin-bottom: 56px;
 
       }
 
@@ -137,11 +142,38 @@
         
       }
    }
+
+   //FOOTER
+   .footer {
+      margin-bottom: 56px;
+      
+      .margin {
+         & > div {
+            &:nth-child(1) {
+               padding: 56px 75px 64px;
+               margin-bottom: 60px;
+
+
+               h2,p {
+                  margin-bottom: 26px;
+               }
+
+               p {
+                  line-height: 28px;
+               }
+            }
+
+            &:nth-child(2) {
+
+            }
+         }
+      }
+   }
 }
 
 @include desktop {
    .margin {
-      width: 77%;
+      width: 77.08%;
    }
    h2 {
       font-size: 40px;
@@ -153,15 +185,6 @@
 
       .margin {
          padding-top: 34px;
-      }
-
-      a {
-         //logo
-         &:nth-child(1) {
-            img {
-               width: 64px;
-            }
-         }
       }
    }
 
@@ -226,5 +249,47 @@
    //PROJECTS SECTION
    .works {
       margin-bottom: 88px;
+   }
+
+   //FOOTER
+   .footer {
+      margin-bottom: 56px;
+      
+      .margin {
+         & > div {
+            &:nth-child(1) {
+               padding: 81px 65px 80px;
+               margin-bottom: 60px;
+               @include flexSpread;
+               align-items: center;
+
+               & > div {
+                  text-align: left;
+                  width: 55%;
+               }
+
+               & > a {
+                  margin: unset;
+                  margin-right: 30px;
+               }
+
+               h2,p {
+                  margin-bottom: unset;
+               }
+
+               h2 {
+                  margin-bottom: 25px;
+               }
+
+               p {
+                  line-height: 28px;
+               }
+            }
+
+            &:nth-child(2) {
+
+            }
+         }
+      }
    }
 }
