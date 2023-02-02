@@ -79,6 +79,11 @@ h2 {
   font-weight: 700;
 }
 
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 .header {
   margin-bottom: 32px;
 }
@@ -189,6 +194,70 @@ h2 {
   text-align: center;
 }
 
+.works {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.works h3 {
+  margin-bottom: 32px;
+}
+.works .workSlide-container {
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+.works .workSlide-slider {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  position: relative;
+  margin-bottom: 32px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.works .workSlide-slider::-webkit-scrollbar {
+  display: none;
+}
+.works .workSlide {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0px 15px;
+}
+.works .workSlide > div {
+  display: flex;
+  gap: 15px;
+}
+.works .workSlide > div img {
+  width: 270px;
+  border-radius: 10px;
+}
+.works .workSlide-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.works .workSlide-controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border: none;
+  border-radius: 100%;
+  background: hsl(0deg, 0%, 1%);
+}
+.works .workSlide-controls button:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+.works .workSlide-controls button:hover {
+  background: hsl(252deg, 66%, 62%);
+}
+
 @media (min-width: 768px) {
   .regular {
     font-size: 18px;
@@ -204,6 +273,9 @@ h2 {
   }
   h2 {
     font-size: 32px;
+  }
+  h3 {
+    font-size: 2rem;
   }
   .header {
     margin-bottom: 68px;
@@ -260,6 +332,25 @@ h2 {
     text-align: left;
     width: 49.1%;
     margin-left: 69px;
+  }
+  .works {
+    text-align: center;
+    margin-bottom: 120px;
+  }
+  .works h3 {
+    margin-bottom: 56px;
+  }
+  .works .workSlide-slider {
+    margin-bottom: 32px;
+  }
+  .works .workSlide {
+    padding: 0px 30px;
+  }
+  .works .workSlide > div {
+    gap: 30px;
+  }
+  .works .workSlide > div img {
+    width: 540px;
   }
 }
 @media (min-width: 1440px) {
@@ -319,5 +410,8 @@ h2 {
     text-align: left;
     width: 48.3%;
     margin-left: unset;
+  }
+  .works {
+    margin-bottom: 88px;
   }
 }

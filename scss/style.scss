@@ -55,6 +55,10 @@ h2 {
    font-size: 1.625rem; //26px
    font-weight: 700;
 }
+h3 {
+   font-size: 1.5rem; //24px
+   font-weight: 700;
+}
 
 
 //HEADER
@@ -203,6 +207,75 @@ h2 {
          &:nth-child(2) {
             text-align: center;
             
+         }
+      }
+   }
+}
+
+//PROJECTS SECTION
+.works {
+   text-align: center;
+   margin-bottom: 100px;
+
+   h3 {
+      margin-bottom: 32px;
+   }
+
+   .workSlide-container {
+      width: 100vw;
+      max-width: 100vw;
+      overflow-x: hidden;
+   }
+
+   .workSlide-slider {
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      position: relative;
+      margin-bottom: 32px;
+
+      &::-webkit-scrollbar {
+         display: none;
+      }
+
+      -ms-overflow-style: none; 
+      scrollbar-width: none;
+   }
+
+   .workSlide {
+      width: max-content;
+      padding: 0px 15px;
+
+      //flexbox
+      & > div {
+         display: flex;
+         gap: 15px;
+
+         //each slide item
+         img {
+            width: 270px;
+            border-radius: 10px;
+         }
+      }
+   }
+
+   .workSlide-controls {
+      @include flexCenter;
+      gap: 16px;
+      position: absolute;
+      width: 100%;
+      left: 0;
+
+      button {
+         @include flexCenter;
+         @include hoverPointer;
+         width: 64px;
+         height: 64px;
+         border: none;
+         border-radius: 100%;
+         background: $black;
+
+         &:hover {
+            background: $galaticBlue;
          }
       }
    }
