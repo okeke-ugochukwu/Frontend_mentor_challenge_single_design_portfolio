@@ -1,6 +1,7 @@
 @include tabs {
    .regular {
-      font-size: 18px; //18px
+      font-size: 1.125rem; //18px
+      line-height: 1.75rem; //28px
    }
    .btn {
       max-width: 228px;
@@ -78,9 +79,6 @@
    .hero2 {
       margin-bottom: 120px;
 
-      p {
-         line-height: 28px;
-      }
       a {
          margin: unset;
          min-width: 228px;
@@ -158,9 +156,7 @@
                   margin-bottom: 26px;
                }
 
-               p {
-                  line-height: 28px;
-               }
+               
             }
 
             &:nth-child(2) {
@@ -217,7 +213,6 @@
       margin-bottom: 88px;
       
       p {
-         line-height: 28px;
       }
       a {
          margin: unset;
@@ -277,9 +272,7 @@
                   margin-bottom: 25px;
                }
 
-               p {
-                  line-height: 28px;
-               }
+               
             }
 
             &:nth-child(2) {
