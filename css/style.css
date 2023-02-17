@@ -394,6 +394,7 @@ h3 {
   }
   h2 {
     font-size: 40px;
+    line-height: 50.4px;
   }
   .header {
     margin-bottom: 66px;
@@ -404,6 +405,7 @@ h3 {
   .hero h1 {
     margin-bottom: 23px;
     font-size: 3.5rem;
+    line-height: 70.56px;
   }
   .hero p {
     margin-bottom: 80px;
@@ -419,6 +421,9 @@ h3 {
   }
   .hero2 {
     margin-bottom: 88px;
+  }
+  .hero2 p {
+    margin-bottom: 32px;
   }
   .hero2 a {
     margin: unset;
