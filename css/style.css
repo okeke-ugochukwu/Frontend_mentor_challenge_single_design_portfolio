@@ -30,6 +30,10 @@ body {
   background: hsl(28deg, 100%, 97%);
 }
 
+img {
+  display: block;
+}
+
 .regular {
   font-size: 1rem;
   line-height: 26px;
@@ -376,6 +380,7 @@ h3 {
   }
   .works .workSlide > div img {
     width: 540px;
+    height: 360px;
   }
   .footer {
     margin-bottom: 56px;
