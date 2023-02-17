@@ -174,7 +174,7 @@
    }
    h2 {
       font-size: 40px;
-      line-height: 50.4px;
+      line-height: 51px;
    }
 
    //HEADER
@@ -255,7 +255,7 @@
          & > div {
             &:nth-child(1) {
                padding: 81px 65px 80px;
-               margin-bottom: 60px;
+               margin-bottom: 56px;
                @include flexSpread;
                align-items: center;
 

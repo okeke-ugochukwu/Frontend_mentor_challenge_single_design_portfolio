@@ -283,6 +283,9 @@ h3 {
 .footer .margin > div:nth-child(1) h2, .footer .margin > div:nth-child(1) p {
   margin-bottom: 24px;
 }
+.footer .margin > div:nth-child(1) p {
+  font-weight: 500;
+}
 @media (min-width: 768px) {
   .regular {
     font-size: 1.125rem;
@@ -399,7 +402,7 @@ h3 {
   }
   h2 {
     font-size: 40px;
-    line-height: 50.4px;
+    line-height: 51px;
   }
   .header {
     margin-bottom: 66px;
@@ -455,7 +458,7 @@ h3 {
   }
   .footer .margin > div:nth-child(1) {
     padding: 81px 65px 80px;
-    margin-bottom: 60px;
+    margin-bottom: 56px;
     display: flex;
     justify-content: space-between;
     align-items: center;
